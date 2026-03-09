@@ -47,8 +47,8 @@
 * **文件导入**：从您的 NAC 或资产管理系统中导出“打印机”设备列表，保存为 `.txt` 或 `.csv`（只需包含 IP 即可），点击“📂 导入IP列表”加载。
 * ## 📸 运行截图
 
-![Printer Hunter 运行界面](2.png)
-![Printer Hunter 运行界面](1.png)
+![Printer Hunter 运行界面](images/1.png)
+![Printer Hunter 运行界面](images/2.png)
 
 *图：Printer Hunter 多线程扫描与风险高亮预警界面*
 
@@ -57,7 +57,7 @@
 * 点击 **“📊 导出Excel报表”**，获取带有完整格式与颜色预警的审计清单。
 * ## 📸 导出截图
 
-![Printer Hunter 导出界面](3.png)
+![Printer Hunter 导出界面](images/3.png)
 
 ## ⚠️ 常见限制说明
 

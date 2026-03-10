@@ -4,7 +4,7 @@
 ![Platform](https://img.shields.io/badge/platform-Windows_x64-lightgrey)
 ![Status](https://img.shields.io/badge/status-Stable-success)
 
-**Printer Hunter** 是一款免安装、开箱即用的内网哑终端安全审计工具。专为应对企业网络准入控制（NAC）场景下的**“哑终端逃逸”**威胁而设计，帮助安全运营和网络运维人员快速完成资产排查。
+**Printer Hunter** 是一款免安装、开箱即用的内网哑终端安全审计工具。专为应对企业网络准入控制（NAC）场景下的“哑终端逃逸”威胁而设计，帮助安全运营和网络运维人员快速完成资产排查。
 
 ## 💡 背景与核心痛点
 

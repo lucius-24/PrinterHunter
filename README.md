@@ -1,3 +1,4 @@
+# 中文
 # 🎯 Printer Hunter (哑终端/打印机真实性审计工具)
 
 ![Version](https://img.shields.io/badge/version-v1.0-blue)
@@ -68,6 +69,7 @@
 
 本工具仅供企业内部网络安全人员、系统管理员进行合法合规的资产盘点与安全防守使用。请在获得授权的网络环境中运行。任何未经授权的探测行为引发的法律后果，由使用者自行承担。
 
+# English
 # 🎯 Printer Hunter
 
 ![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)

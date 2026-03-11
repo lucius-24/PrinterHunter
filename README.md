@@ -67,3 +67,35 @@
 ## 🛡️ 免责声明
 
 本工具仅供企业内部网络安全人员、系统管理员进行合法合规的资产盘点与安全防守使用。请在获得授权的网络环境中运行。任何未经授权的探测行为引发的法律后果，由使用者自行承担。
+
+# 🎯 Printer Hunter
+
+![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux-lightgrey)
+
+**Printer Hunter** is a lightweight, highly concurrent network auditing tool designed to detect "dumb terminal spoofing" in Enterprise Network Access Control (NAC) environments.
+
+## 💡 The Problem
+
+In enterprise networks, "dumb terminals" like printers often lack 802.1X authentication capabilities. To maintain business operations, NAC systems frequently whitelist these devices based on MAC OUI or DHCP fingerprints. 
+
+**The Threat:** Attackers or non-compliant users can easily bypass NAC policies by spoofing a printer's MAC address on their personal PC or server. Printer Hunter exposes these disguised hosts through deep multi-protocol fingerprinting.
+
+## ✨ Core Features
+
+- 🕵️‍♂️ **Multi-Protocol Fingerprinting**: Validates targets across multiple print-specific protocols rather than relying on a single port:
+  - **JetDirect (9100)**: Extracts hardware IDs via PJL commands.
+  - **LPD (515)**: Interacts with UNIX line printer daemons.
+  - **IPP/HTTP (631/80)**: Parses Web UI titles and Server headers.
+  - **SNMP (161)**: Reads `sysDescr` for OS-level fingerprints (supports v1/v2c fallback).
+- 🛡️ **Stealth Host Detection**: Uses ICMP Ping and local ARP resolution to expose firewalled PCs that drop all TCP/UDP traffic but remain active on the network.
+- 🚀 **High Performance**: Built-in concurrent scanning engine easily handles large subnets.
+- 📊 **Actionable Reporting**: One-click export to Excel (`.xlsx`) with color-coded risk levels:
+  - 🟢 **Green (Safe)**: Genuine printer signatures confirmed.
+  - 🟡 **Yellow (Suspicious)**: Ports open, but no valid data returned.
+  - 🔴 **Red (High Risk)**: PC/Server OS detected, or stealth host actively dropping packets.
+
+## 🚀 Quick Start
+
+Download the standalone `.exe` from the [Releases](https://github.com/YourUsername/PrinterHunter/releases) page. No installation or dependencies required.
